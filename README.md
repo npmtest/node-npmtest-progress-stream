@@ -1,6 +1,6 @@
 # npmtest-progress-stream
 
-#### basic test coverage for  progress-stream (v2.0.0)  [![npm package](https://img.shields.io/npm/v/npmtest-progress-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-progress-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-progress-stream.svg)](https://travis-ci.org/npmtest/node-npmtest-progress-stream)
+#### basic test coverage for  [progress-stream (v2.0.0)](https://github.com/freeall/progress-stream#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-progress-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-progress-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-progress-stream.svg)](https://travis-ci.org/npmtest/node-npmtest-progress-stream)
 
 #### Read the progress of a stream
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-progress-stream/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-progress-stream/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-progress-stream/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-progress-stream/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-progress-stream/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-progress-stream/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-progress-stream/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-progress-stream/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-progress-stream/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-progress-stream/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-progress-stream/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-progress-stream/build/coverage.html/index.html)
 
@@ -35,13 +35,29 @@
 ```json
 
 {
-    "name": "progress-stream",
-    "version": "2.0.0",
-    "description": "Read the progress of a stream",
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:freeall/progress-stream.git"
+    "author": {
+        "name": "freeall"
     },
+    "bugs": {
+        "url": "https://github.com/freeall/progress-stream/issues"
+    },
+    "dependencies": {
+        "speedometer": "~1.0.0",
+        "through2": "~2.0.3"
+    },
+    "description": "Read the progress of a stream",
+    "devDependencies": {
+        "numeral": "~1.5.2",
+        "request": "~2.29.0",
+        "single-line-log": "~1.0.0"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "fac63a0b3d11deacbb0969abcc93b214bce19ed5",
+        "tarball": "https://registry.npmjs.org/progress-stream/-/progress-stream-2.0.0.tgz"
+    },
+    "gitHead": "1beb155de00a5ee77feb7f422e56e3bec0bcd167",
+    "homepage": "https://github.com/freeall/progress-stream#readme",
     "keywords": [
         "stream",
         "progress",
@@ -54,21 +70,24 @@
         "request",
         "http"
     ],
+    "license": "BSD-2-Clause",
     "main": "index.js",
-    "dependencies": {
-        "speedometer": "~1.0.0",
-        "through2": "~2.0.3"
-    },
-    "devDependencies": {
-        "request": "~2.29.0",
-        "single-line-log": "~1.0.0",
-        "numeral": "~1.5.2"
+    "maintainers": [
+        {
+            "name": "freeall"
+        }
+    ],
+    "name": "progress-stream",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/freeall/progress-stream.git"
     },
     "scripts": {
         "test": "node test/http.js && node test/request.js"
     },
-    "author": "freeall <freeall@gmail.com>",
-    "license": "BSD-2-Clause"
+    "version": "2.0.0",
+    "bin": {}
 }
 ```
 
